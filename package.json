@@ -1,6 +1,6 @@
 {
   "name": "fantasy-static",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "fantasy static file",
   "main": "index.js",
   "scripts": {
