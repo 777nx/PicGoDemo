@@ -1,7 +1,7 @@
 {
-  "name": "fantasy-static",
-  "version": "1.0.6",
-  "description": "fantasy static file",
+  "name": "picgodemo",
+  "version": "1.0.0",
+  "description": "静态资源仓库",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

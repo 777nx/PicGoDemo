@@ -2,7 +2,7 @@ name: Node.js Package
 
 # 推送到 main 时自动发布到 npm（版本号已在 npm 上时自动跳过）。
 # 认证走 npm Trusted Publishing (OIDC)，不再需要 NPM_TOKEN 密钥；旧密钥可以删掉。
-# 需先在 https://www.npmjs.com/package/fantasy-static/access 配好 Trusted Publisher：
+# 需先在 https://www.npmjs.com/package/picgodemo/access 配好 Trusted Publisher：
 #   Provider: GitHub Actions
 #   Organization or user: 777nx
 #   Repository: PicGoDemo
@@ -29,8 +29,8 @@ jobs:
       - name: Publish to npm
         run: |
           VERSION=$(node -p "require('./package.json').version")
-          if npm view "fantasy-static@$VERSION" version >/dev/null 2>&1; then
-            echo "fantasy-static@$VERSION 已发布过，跳过。"
+          if npm view "picgodemo@$VERSION" version >/dev/null 2>&1; then
+            echo "picgodemo@$VERSION 已发布过，跳过。"
           else
             npm publish --provenance
           fi
